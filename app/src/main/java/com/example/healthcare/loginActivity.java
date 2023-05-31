@@ -30,8 +30,8 @@ edUsername = findViewById(R.id.editTextloginusername);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String username = edUsername.getText().toString();
+                startActivity(new Intent(loginActivity.this,HomeActivity.class));
+              /*  String username = edUsername.getText().toString();
                 String password = edPassword.getText().toString();
                 Database db = new Database(getApplicationContext(),"healthcare",null , 1);
 
@@ -53,7 +53,7 @@ edUsername = findViewById(R.id.editTextloginusername);
                         Toast.makeText(getApplicationContext(), "Invalid Username or password"+result, Toast.LENGTH_SHORT).show();
                     }
 
-                }
+                }*/
             }
         });
         tv.setOnClickListener(new View.OnClickListener() {
